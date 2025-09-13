@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Booking System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .nav {
+            background-color: #ddd;
+            padding: 10px;
+        }
+        
+        .nav a {
+            color: #333;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        
+        .content {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .workshop-list {
+            border: 1px solid #ccc;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        
+        .button {
+            background-color: #007cba;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #666;
+        }
+        
+        /* Poor mobile experience */
+        @media (max-width: 768px) {
+            body {
+                font-size: 12px;
+            }
+            .nav a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>FOSSEE Workshop Booking</h1>
+    </div>
+    
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">Workshops</a>
+        <a href="#">Statistics</a>
+        <a href="#">Login</a>
+    </div>
+    
+    <div class="content">
+        <h2>Available Workshops</h2>
+        
+        <div class="workshop-list">
+            <h3>Python Programming Workshop</h3>
+            <p>Date: December 15-16, 2024</p>
+            <p>Location: Mumbai</p>
+            <p>Instructor: Dr. Raj Kumar</p>
+            <button class="button">Book Now</button>
+        </div>
+        
+        <div class="workshop-list">
+            <h3>Data Science with R</h3>
+            <p>Date: December 20-21, 2024</p>
+            <p>Location: Delhi</p>
+            <p>Instructor: Prof. Anita Sharma</p>
+            <button class="button">Book Now</button>
+        </div>
+        
+        <div class="workshop-list">
+            <h3>Web Development</h3>
+            <p>Date: December 18-19, 2024</p>
+            <p>Location: Bangalore</p>
+            <p>Instructor: Mr. Suresh Patel</p>
+            <button class="button" disabled>Full</button>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 FOSSEE Workshop Booking System</p>
+    </div>
+</body>
+</html>
